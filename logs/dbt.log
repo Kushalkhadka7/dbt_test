@@ -1,0 +1,243 @@
+[0m20:45:26.586253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22e8f13e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22e790ab90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22e790ac20>]}
+
+
+============================== 20:45:26.589171 | a573e94e-3b91-4f5d-95f4-284f1e693ed3 ==============================
+[0m20:45:26.589171 [info ] [MainThread]: Running with dbt=1.5.3
+[0m20:45:26.589889 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kushal/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:45:26.590347 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/kushal/.dbt')}
+[0m20:45:26.590744 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m20:45:39.686354 [debug] [MainThread]: Starter project path: /home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/include/starter_project
+[0m20:45:45.216970 [info ] [MainThread]: Profile dbt_test written to /home/kushal/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m20:45:45.217581 [info ] [MainThread]: 
+Your new dbt project "dbt_test" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:45:45.218241 [debug] [MainThread]: Command `dbt init` succeeded at 20:45:45.218135 after 18.63 seconds
+[0m20:45:45.218614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22e8f13e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22e790aaa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22e790a860>]}
+[0m20:45:45.218948 [debug] [MainThread]: Flushing usage events
+[0m21:12:16.235682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56d693fe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56d530a620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56d530a680>]}
+
+
+============================== 21:12:16.237809 | 3484cc79-e6fe-4c4e-8517-e8fb64e45373 ==============================
+[0m21:12:16.237809 [info ] [MainThread]: Running with dbt=1.5.3
+[0m21:12:16.238230 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/kushal/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:12:16.238579 [info ] [MainThread]: dbt version: 1.5.3
+[0m21:12:16.238842 [info ] [MainThread]: python version: 3.10.6
+[0m21:12:16.239103 [info ] [MainThread]: python path: /home/kushal/PROJECTS/dbt-test/dbt-test/bin/python
+[0m21:12:16.239337 [info ] [MainThread]: os info: Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m21:12:16.239565 [info ] [MainThread]: Using profiles.yml file at /home/kushal/.dbt/profiles.yml
+[0m21:12:16.240741 [info ] [MainThread]: Using dbt_project.yml file at /home/kushal/PROJECTS/dbt-test/dbt_project.yml
+[0m21:12:16.241022 [info ] [MainThread]: Configuration:
+[0m21:12:16.268212 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:12:16.268623 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:12:16.268936 [info ] [MainThread]: Required dependencies:
+[0m21:12:16.269218 [debug] [MainThread]: Executing "git --help"
+[0m21:12:16.270327 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:12:16.270626 [debug] [MainThread]: STDERR: "b''"
+[0m21:12:16.270817 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:12:16.271063 [info ] [MainThread]: Connection:
+[0m21:12:16.271306 [info ] [MainThread]:   host: localhost
+[0m21:12:16.271613 [info ] [MainThread]:   port: 5432
+[0m21:12:16.271871 [info ] [MainThread]:   user: admin
+[0m21:12:16.272139 [info ] [MainThread]:   database: test_dbt
+[0m21:12:16.272397 [info ] [MainThread]:   schema: sz
+[0m21:12:16.272665 [info ] [MainThread]:   search_path: None
+[0m21:12:16.272906 [info ] [MainThread]:   keepalives_idle: 0
+[0m21:12:16.273155 [info ] [MainThread]:   sslmode: None
+[0m21:12:16.273590 [info ] [MainThread]: Registered adapter: postgres=1.5.3
+[0m21:12:16.274104 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m21:12:16.274430 [debug] [MainThread]: Using postgres connection "debug"
+[0m21:12:16.274657 [debug] [MainThread]: On debug: select 1 as id
+[0m21:12:16.274873 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:12:16.292644 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m21:12:16.293425 [debug] [MainThread]: On debug: Close
+[0m21:12:16.293725 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m21:12:16.294020 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:12:16.294306 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m21:12:16.294803 [debug] [MainThread]: Command `dbt debug` failed at 21:12:16.294726 after 0.06 seconds
+[0m21:12:16.295069 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:12:16.295302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56d693fe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56d53e3b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56d53e3520>]}
+[0m21:12:16.295564 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-07-26 15:15:10.629556 | 38480176-9841-43ea-a001-f4403f8211d3 ==============================
+[0m15:15:10.629556 [info ] [MainThread]: Running with dbt=1.4.6
+[0m15:15:10.630962 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/kushal/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m15:15:10.631193 [debug] [MainThread]: Tracking: tracking
+[0m15:15:10.632748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d4e16cf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d4e16d810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d4e16c1c0>]}
+[0m15:15:10.678309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d4e16dcc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d4e16f1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d4e16d270>]}
+[0m15:15:10.678640 [debug] [MainThread]: Flushing usage events
+[0m15:15:11.883681 [error] [MainThread]: Encountered an error:
+cannot import name 'ConstraintSupport' from 'dbt.adapters.base.impl' (/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/base/impl.py)
+[0m15:15:11.896806 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/task/debug.py", line 109, in run
+    self.test_configuration()
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/task/debug.py", line 281, in test_configuration
+    profile_status = self._load_profile()
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/task/debug.py", line 252, in _load_profile
+    profile: Profile = Profile.render_from_args(self.args, renderer, profile_name)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/config/profile.py", line 428, in render_from_args
+    return cls.from_raw_profiles(
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/config/profile.py", line 394, in from_raw_profiles
+    return cls.from_raw_profile_info(
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/config/profile.py", line 348, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/config/profile.py", line 181, in _credentials_from_profile
+    cls = load_plugin(typename)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/factory.py", line 202, in load_plugin
+    return FACTORY.load_plugin(name)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/factory.py", line 57, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/postgres/__init__.py", line 6, in <module>
+    from dbt.adapters.postgres.impl import PostgresAdapter
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/postgres/impl.py", line 5, in <module>
+    from dbt.adapters.base.impl import AdapterConfig, ConstraintSupport
+ImportError: cannot import name 'ConstraintSupport' from 'dbt.adapters.base.impl' (/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/base/impl.py)
+
+
+
+============================== 2023-07-26 15:15:53.465094 | c7d207b1-211b-429d-b02f-6495d1e49cfd ==============================
+[0m15:15:53.465094 [info ] [MainThread]: Running with dbt=1.4.6
+[0m15:15:53.466086 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/kushal/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m15:15:53.466221 [debug] [MainThread]: Tracking: tracking
+[0m15:15:53.467320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a24a44460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a24a45930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a24a44f40>]}
+[0m15:15:53.485269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a24a45ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a24a46f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a24a453c0>]}
+[0m15:15:53.485593 [debug] [MainThread]: Flushing usage events
+[0m15:15:54.456475 [error] [MainThread]: Encountered an error:
+cannot import name 'ConstraintSupport' from 'dbt.adapters.base.impl' (/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/base/impl.py)
+[0m15:15:54.457557 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/task/debug.py", line 109, in run
+    self.test_configuration()
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/task/debug.py", line 281, in test_configuration
+    profile_status = self._load_profile()
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/task/debug.py", line 252, in _load_profile
+    profile: Profile = Profile.render_from_args(self.args, renderer, profile_name)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/config/profile.py", line 428, in render_from_args
+    return cls.from_raw_profiles(
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/config/profile.py", line 394, in from_raw_profiles
+    return cls.from_raw_profile_info(
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/config/profile.py", line 348, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/config/profile.py", line 181, in _credentials_from_profile
+    cls = load_plugin(typename)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/factory.py", line 202, in load_plugin
+    return FACTORY.load_plugin(name)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/factory.py", line 57, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/postgres/__init__.py", line 6, in <module>
+    from dbt.adapters.postgres.impl import PostgresAdapter
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/postgres/impl.py", line 5, in <module>
+    from dbt.adapters.base.impl import AdapterConfig, ConstraintSupport
+ImportError: cannot import name 'ConstraintSupport' from 'dbt.adapters.base.impl' (/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/base/impl.py)
+
+
+
+============================== 2023-07-26 15:20:00.921183 | 20f965ee-3e08-47f5-a389-3e0a0431d928 ==============================
+[0m15:20:00.921183 [info ] [MainThread]: Running with dbt=1.4.6
+[0m15:20:00.922233 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/kushal/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m15:20:00.922357 [debug] [MainThread]: Tracking: tracking
+[0m15:20:00.923471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef1df480a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef1df496f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef1df49030>]}
+[0m15:20:00.943539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef1df49b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef1df4b0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef1df49390>]}
+[0m15:20:00.943929 [debug] [MainThread]: Flushing usage events
+[0m15:20:02.176852 [error] [MainThread]: Encountered an error:
+cannot import name 'ConstraintSupport' from 'dbt.adapters.base.impl' (/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/base/impl.py)
+[0m15:20:02.178214 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/task/debug.py", line 109, in run
+    self.test_configuration()
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/task/debug.py", line 281, in test_configuration
+    profile_status = self._load_profile()
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/task/debug.py", line 252, in _load_profile
+    profile: Profile = Profile.render_from_args(self.args, renderer, profile_name)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/config/profile.py", line 428, in render_from_args
+    return cls.from_raw_profiles(
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/config/profile.py", line 394, in from_raw_profiles
+    return cls.from_raw_profile_info(
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/config/profile.py", line 348, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/config/profile.py", line 181, in _credentials_from_profile
+    cls = load_plugin(typename)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/factory.py", line 202, in load_plugin
+    return FACTORY.load_plugin(name)
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/factory.py", line 57, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/postgres/__init__.py", line 6, in <module>
+    from dbt.adapters.postgres.impl import PostgresAdapter
+  File "/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/postgres/impl.py", line 5, in <module>
+    from dbt.adapters.base.impl import AdapterConfig, ConstraintSupport
+ImportError: cannot import name 'ConstraintSupport' from 'dbt.adapters.base.impl' (/home/kushal/PROJECTS/dbt-test/dbt-test/lib/python3.10/site-packages/dbt/adapters/base/impl.py)
+
+
+
+============================== 2023-07-26 15:20:45.211553 | 7c7bcab3-20b2-4517-a70d-de01243c1b81 ==============================
+[0m15:20:45.211553 [info ] [MainThread]: Running with dbt=1.4.6
+[0m15:20:45.212539 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/kushal/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m15:20:45.212681 [debug] [MainThread]: Tracking: tracking
+[0m15:20:45.213615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe59007b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe590074c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe59007490>]}
+[0m15:20:45.242916 [debug] [MainThread]: Executing "git --help"
+[0m15:20:45.243986 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:20:45.244188 [debug] [MainThread]: STDERR: "b''"
+[0m15:20:45.257924 [debug] [MainThread]: Acquiring new clickhouse connection 'debug'
+[0m15:20:45.258241 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:20:45.299747 [debug] [MainThread]: dbt_clickhouse adapter: On debug: select 1 as id...
+[0m15:20:45.301525 [debug] [MainThread]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:20:45.302258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe5a37ec50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe59071cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe59073130>]}
+[0m15:20:45.302531 [debug] [MainThread]: Flushing usage events
+[0m15:20:46.311933 [debug] [MainThread]: Connection 'debug' was left open.
+[0m15:20:46.312570 [debug] [MainThread]: On debug: Close

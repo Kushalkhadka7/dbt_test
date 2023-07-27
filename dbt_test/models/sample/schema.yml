@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: dbt_git
+    description: "sample database provided by postgres"
+    database: git
+    schema: git
+    tables:
+      - name: commits
+        description: "covid-19 dataset"
+      - name: file_changes
