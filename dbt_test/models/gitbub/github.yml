@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: source_git
+    description: "Click house database which acts as source."
+    database: git
+    schema: git
+    tables:
+      - name: commits
+        description: "Github commits."
+      - name: file_changes
+        description: "All the file changes data."
+      - name: line_changes
+        description: "All the line changes data."
